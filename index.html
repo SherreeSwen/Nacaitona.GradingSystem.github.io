@@ -1,0 +1,132 @@
+<!Doctype html>
+<head>
+    <script type="text/javascript" src="functions/main.js"></script>
+    <title>Grade Remarks</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Gruppo;
+        font-size: 20px;
+    
+    }
+    .main_container .title_container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+        margin-right: 5vw;
+    }
+    .main_container .title_container h1 {
+        margin: .3em 0;
+        font-size: 38px;
+    }
+    .main_container .container {
+        background-color: rgb(255, 255, 255);
+        margin-top: 2vh;
+        border: solid 2px black;
+        padding: 1vh 4vw 2.5vh 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_container .container .text_fields {
+        display: flex;
+        flex-direction: column;
+    }
+    .main_container .container .remarks {
+        display: flex;
+        flex-direction: column;
+    }
+    .main_container .container .remarks .display {
+        margin: 5vh 0 1vh 2vw;
+        color: rgb(36, 115, 235);
+    }
+    .main_container .container .remarks .result {
+        margin: 0 0 2vh 0;
+        padding: 0 0 0 2vw;
+        color: rgb(36, 115, 235);
+    }
+    .main_container .container .remarks .result div {
+        margin: 1vh 0 0 0;
+        color: rgb(36, 115, 235);
+    }
+    .main_container .container .text_fields div {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2vh;
+    }
+    .main_container .container .text_fields div p {
+        margin-right: 1vw;
+        color: rgb(36, 115, 235);
+    }
+    .main_container .container .text_fields div input {
+        width: 18vw;
+    }
+    .main_container .container .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+    .main_container .container .buttons button {
+        margin: 0 1vw;
+    }
+</style>
+<body>
+        <div class="container">
+            <div class="text_fields">
+                <div>
+                    <p style="margin-right: 5.5vw;">Info Management</p>
+                    <input type="text" id="Info Management">
+                </div>
+                <div>
+                    <p style="margin-right: 4vw;">Web System</p>
+                    <input type="text" id="Web System">
+                </div>
+                <div>
+                    <p style="margin-right: 3.45vw;">Ethics</p>
+                    <input type="text" id="Ethics">
+                </div>
+                <div>
+                    <p style="margin-right: 7.2vw;">PathFit 4</p>
+                    <input type="text" id="PathFit4"> 
+                </div>
+                <div>
+                    <p style="margin-right: 4.3vw;">Networking 1</p>
+                    <input type="text" id="Networking 1">
+                </div>
+                <div>
+                    <p>System Integ</p>
+                    <input type="text" id="System Integ">
+                </div>
+                <div>
+                    <p style="margin-right: 2.35vw;">Rizal</p>
+                    <input type="text" id="Rizal">
+                </div>
+            </div>
+            <div class="remarks">
+            </div> -----------------------------------------------------------------
+                <div class="display">Click CALCULATE to display the following needed info:<b></div>
+            </div>-----------------------------------------------------------------
+                <div class="result">
+                    <div id="ave">
+                        Average - 
+                    </div>
+                    <div id="rem">
+                        Remark - 
+                    </div>
+                    <div id="desc">
+                        Descriptor - 
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="buttonPress()">CALCULATE</button>
+        
+                <button type="button" onclick="reset()">RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
